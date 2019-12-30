@@ -1,15 +1,17 @@
-package com.solarshopee.product.dto;
+package com.solarshopee.product.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Map;
 
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
-public class ProductDto {
+public class Product {
+    @Id
+    private String id;
     private String sku;
     private String productName;
     private String category;

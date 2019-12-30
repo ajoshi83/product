@@ -1,0 +1,24 @@
+type Product{
+    id: ID!
+    sku: String
+    productName: String
+    category: String
+    subCategory: String
+    manufacturer: String
+    unitPrice: String
+    weight: String
+    colour: String
+    inStock: Boolean
+    stockQty: String
+    material: String
+    specificAttributes: String
+}
+
+type Query {
+    allProducts: [Product]
+    productBySku(sku: String!): Product
+}
+
+schema {
+    query: Query
+}

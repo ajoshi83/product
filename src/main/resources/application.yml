@@ -1,2 +1,17 @@
 server:
   port: 7001
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ProductDB
+    username: mysqluser
+    password: mysqlpassword
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: productDB
+
+
+
